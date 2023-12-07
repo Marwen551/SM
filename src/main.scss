@@ -1,13 +1,11 @@
-/* Ajoute ici le style spécifique pour le simulateur de calcul */
-
-body {
-  background-color: #d8bfd8;
+:host {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #8e44ad; /* Couleur mauve */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -20,9 +18,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  max-height: 60px;
-  margin-bottom: 20px;
+h1 {
+  color: #2c3e50; /* Couleur texte gris foncé */
 }
 
 label, input, select {
@@ -56,6 +53,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 10px;
+  transition: background-color 0.3s ease; /* Ajout d'une transition pour le changement de couleur au survol */
 }
 
 button:hover {
@@ -68,4 +66,9 @@ button:hover {
   font-size: 24px;
   margin-top: 30px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  max-height: 60px;
+  margin-bottom: 20px;
 }
